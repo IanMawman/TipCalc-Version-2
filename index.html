@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css">
+        
+    </head>
+    <body>
+        <div id="container">
+            <h1>Tip Calculator</h1>
+          <!-- keeping the form in one container to make it easier to change css code -->
+            <div id="calculator">
+          <br>
+
+           
+              
+               <form name = "form1">
+                <p>Total cost of your meal?
+                  <p>
+                    £ <input id="bill" type="text" placeholder="Total Cost" onkeypress="return number(event)">
+                    <p>Tip percentage
+                  <p>
+                   &nbsp &nbsp &nbsp <input id="percent" type= "text" placeholder="Tip Percentage" onkeypress="return number(event)">%
+          <!-- form inputs with corosponding id's to what they represent, used for adding values in the .js file
+          -->
+          </form>
+      
+              <br>
+              <button type="button" id="calculate">Total</button>
+          <!-- calculate button -->
+            </div>
+            <br>
+           
+       <div id="finalTotal"> 
+          <p>Your tip ammount is 
+              <sup> £</sup><span id="total"></span>
+             <!-- id allows data to be outputted here -->
+             </p>
+            </div>
+            
+          
+          </div>
+          <script src="calc.js"></script>
+    </body>
+</html>
